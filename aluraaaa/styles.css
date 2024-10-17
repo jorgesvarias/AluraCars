@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Container Principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+    display: flex;
+    flex-direction: column;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.lista-menu {
+    display: none;
+}
+
+.container__botao:checked + .container__rotulo + .lista-menu {
+    display: block;
+}
+
+.container--icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #6c757d;
+    color: white;
+}
+
+.banner__pesquisa {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Carrosséis */
+.carrossel {
+    padding: 20px 0;
+}
+
+.carrossel__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Tópicos */
+.tópicos {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tópicos__item {
+    margin: 5px 15px;
+}
+
+/* Rodapé */
+.rodapé {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
